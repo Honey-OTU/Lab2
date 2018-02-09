@@ -1,0 +1,5 @@
+a <- c (2,4,5,8,5)
+b <- c (3,4,7,6,9)
+plot(a,b)
+plot(a,b,main="My Scatterplot", xlab="Code errors", ylab="Despair")
+abline(lm(b~a))
