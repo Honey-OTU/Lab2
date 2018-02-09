@@ -1,0 +1,10 @@
+library(ggplot2)
+cereal <- Lock5withR::Cereal
+sugars <- cereal$Sugars
+calories <- cereal$Calories
+company <- cereal$Company
+
+summary(sugars,calories)
+
+ggplot(cereal, aes(sugars, calories, colour=company))+
+  geom_point()
